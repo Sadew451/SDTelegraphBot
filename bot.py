@@ -29,7 +29,7 @@ Tgraph = Client(
    bot_token=Config.TG_BOT_TOKEN,
 )
 
-@SDBOTS.on_message(filters.photo)
+@SDBots.on_message(filters.photo)
 async def uploadphoto(client, message):
   msg = await message.reply_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝘿ᴏᴡɴʟᴏᴀᴅ ⚡️`")
   userid = str(message.chat.id)
@@ -44,7 +44,7 @@ async def uploadphoto(client, message):
     await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
     os.remove(img_path) 
 
-@SDBOTs.on_message(filters.animation)
+@SDBots.on_message(filters.animation)
 async def uploadgif(client, message):
   if(message.animation.file_size < 5242880):
     msg = await message.reply_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝘿ᴏᴡɴʟᴏᴀᴅ ⚡️`")
@@ -61,7 +61,7 @@ async def uploadgif(client, message):
   else:
     await message.reply_text("Size Should Be Less Than 5 mb")
 
-@SDBOTS.on_message(filters.video)
+@SDBots.on_message(filters.video)
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
     msg = await message.reply_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝘿ᴏᴡɴʟᴏᴀᴅ ⚡️`")
@@ -78,7 +78,7 @@ async def uploadvid(client, message):
   else:
     await message.reply_text("Size Should Be Less Than 5 mb")
 
-@SDBOTS.on_message(filters.command(["start"]))
+@SDBots.on_message(filters.command(["start"]))
 async def home(client, message):
   buttons = [[
         InlineKeyboardButton('Help', callback_data='help'),
@@ -103,7 +103,7 @@ async def home(client, message):
         reply_to_message_id=message.message_id
     )
 
-@SDBOTS.on_message(filters.command(["help"]))
+@SDBots.on_message(filters.command(["help"]))
 async def help(client, message):
   buttons = [[
         InlineKeyboardButton('Home ⚡️', callback_data='home'),
@@ -123,7 +123,7 @@ async def help(client, message):
         parse_mode="html",
         reply_to_message_id=message.message_id
     )                           
-@SDBOTS.on_callback_query()
+@SDBots.on_callback_query()
 async def button(Tgraph, update):
       cb_data = update.data
       if "help" in cb_data:
@@ -135,4 +135,4 @@ async def button(Tgraph, update):
         await update.message.delete()
         await home(Tgraph, update.message)
 
-SDBOTS.run()
+SDBots.run()
