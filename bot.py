@@ -31,11 +31,11 @@ Tgraph = Client(
 
 @Tgraph.on_message(filters.photo)
 async def uploadphoto(client, message):
-  msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
+  msg = await message.reply_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝘿ᴏᴡɴʟᴏᴀᴅ ⚡️`")
   userid = str(message.chat.id)
   img_path = (f"./DOWNLOADS/{userid}.jpg")
   img_path = await client.download_media(message=message, file_name=img_path)
-  await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
+  await msg.edit_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝙐ᴘʟᴏᴀᴅ.....🧨`")
   try:
     tlink = upload_file(img_path)
   except:
@@ -47,11 +47,11 @@ async def uploadphoto(client, message):
 @Tgraph.on_message(filters.animation)
 async def uploadgif(client, message):
   if(message.animation.file_size < 5242880):
-    msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
+    msg = await message.reply_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝘿ᴏᴡɴʟᴏᴀᴅ ⚡️`")
     userid = str(message.chat.id)
     gif_path = (f"./DOWNLOADS/{userid}.mp4")
     gif_path = await client.download_media(message=message, file_name=gif_path)
-    await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
+    await msg.edit_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝙐ᴘʟᴏᴀᴅ.....🧨`")
     try:
       tlink = upload_file(gif_path)
       await msg.edit_text(f"https://telegra.ph{tlink[0]}")   
@@ -64,11 +64,11 @@ async def uploadgif(client, message):
 @Tgraph.on_message(filters.video)
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
-    msg = await message.reply_text("`Tʀʏɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅ`")
+    msg = await message.reply_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝘿ᴏᴡɴʟᴏᴀᴅ ⚡️`")
     userid = str(message.chat.id)
     vid_path = (f"./DOWNLOADS/{userid}.mp4")
     vid_path = await client.download_media(message=message, file_name=vid_path)
-    await msg.edit_text("`Tʀʏɪɴɢ Tᴏ Uᴘʟᴏᴀᴅ.....`")
+    await msg.edit_text("`𝙏ʀʏɪɴɢ 𝙏ᴏ 𝙐ᴘʟᴏᴀᴅ.....🧨`")
     try:
       tlink = upload_file(vid_path)
       await msg.edit_text(f"https://telegra.ph{tlink[0]}")     
@@ -85,19 +85,19 @@ async def home(client, message):
         InlineKeyboardButton('Close', callback_data='close')
     ],
     [
-        InlineKeyboardButton('Our Channel', url='http://telegram.me/SDBOTs_Inifinity'),
-        InlineKeyboardButton('Source Code', url='https://github.com/Sadew451/TelegraphUploader')
+        InlineKeyboardButton('⚡️ Our Channel 📣', url='http://telegram.me/SDBOTs_Inifinity'),
+        InlineKeyboardButton('📋 Source Code 📋', url='https://github.com/Sadew451/TelegraphUploader')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await Tgraph.send_message(
         chat_id=message.chat.id,
         text="""<b>Hey there,
         
-im a telegraph Uploader That Can Upload Photo, Video And Gif
+👋 𝙞𝙢 𝙖 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙥𝙝 𝙐𝙥𝙡𝙤𝙖𝙙𝙚𝙧 𝙏𝙝𝙖𝙩 𝘾𝙖𝙣 𝙐𝙥𝙡𝙤𝙖𝙙 𝙋𝙝𝙤𝙩𝙤, 𝙑𝙞𝙙𝙚𝙤 𝘼𝙣𝙙 𝙂𝙞𝙛
         
-Simply send me photo, video or gif to upload to Telegra.ph
+𝚂𝚒𝚖𝚙𝚕𝚢 𝚜𝚎𝚗𝚍 𝚖𝚎 𝚙𝚑𝚘𝚝𝚘, 𝚟𝚒𝚍𝚎𝚘 𝚘𝚛 𝚐𝚒𝚏 𝚝𝚘 𝚞𝚙𝚕𝚘𝚊𝚍 𝚝𝚘 𝚃𝚎𝚕𝚎𝚐𝚛𝚊.𝚙𝚑
         
-Made With Love By @SDBotsz</b>""",
+𝙈𝙖𝙙𝙚 𝙒𝙞𝙩𝙝 𝙇𝙤𝙫𝙚 𝘽𝙮 ❤️ @SDBotsz</b>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -106,19 +106,19 @@ Made With Love By @SDBotsz</b>""",
 @Tgraph.on_message(filters.command(["help"]))
 async def help(client, message):
   buttons = [[
-        InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Home ⚡️', callback_data='home'),
+        InlineKeyboardButton('Close 🔐', callback_data='close')
     ],
     [
-        InlineKeyboardButton('Our Channel', url='http://telegram.me/SDBOTs_Inifinity')
+        InlineKeyboardButton('⚡️ Our Channel 📣', url='http://telegram.me/SDBOTs_Inifinity')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await Tgraph.send_message(
         chat_id=message.chat.id,
         text="""There Is Nothung To KnowMore,
         
-Just Send Me A Video/gif/photo Upto 5mb.
-i'll upload ut to telegra.ph and give you the direct link""",
+𝙅𝙪𝙨𝙩 𝙎𝙚𝙣𝙙 𝙈𝙚 𝘼 𝙑𝙞𝙙𝙚𝙤/𝙜𝙞𝙛/𝙥𝙝𝙤𝙩𝙤 𝙐𝙥𝙩𝙤 5𝙢𝙗.
+𝙞'𝙡𝙡 𝙪𝙥𝙡𝙤𝙖𝙙 𝙪𝙩 𝙩𝙤 𝙩𝙚𝙡𝙚𝙜𝙧𝙖.𝙥𝙝 𝙖𝙣𝙙 𝙜𝙞𝙫𝙚 𝙮𝙤𝙪 𝙩𝙝𝙚 𝙙𝙞𝙧𝙚𝙘𝙩 𝙡𝙞𝙣𝙠""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
