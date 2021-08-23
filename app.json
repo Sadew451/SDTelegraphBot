@@ -1,7 +1,7 @@
 {
     "name": "Telegraph Uploader Bot",
     "description": "A bot that can upload medias to Telegra.ph",
-    "logo": "https://telegra.ph/file/b69c591d9667d187249c0.jpg",
+    "logo": "https://telegra.ph/file/8e501f826eb025048c7ba.jpg",
     "keywords": [
         "Telegra.ph",
         "Uploader",
@@ -9,7 +9,7 @@
         "SDBOTs"
     ],
     "website": "https://t.me/SDBOTs_inifinity",
-    "repository": "https://github.com/Sadew451/TelegraphUploader",
+    "repository": "https://github.com/Sadew451/SDTelegraphBot",
     "success_url": "https://telegram.dog/SDBOTsz",
     "env": {
         "TG_BOT_TOKEN": {
