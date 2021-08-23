@@ -2,6 +2,8 @@
 
 An Open Source Telegram Rename Bot
 
+SDTelegraph Bot Visi on Telegram [@SDTelegraphbot](https://telegram.dog/SDTelegraphbot) 
+
 ---
 A Telegram Bot Written In Python To Upload Medias To telegra.ph
 
