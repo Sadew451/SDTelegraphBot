@@ -1,0 +1,40 @@
+{
+    "name": "Telegraph Uploader Bot",
+    "description": "A bot that can upload medias to Telegra.ph",
+    "logo": "https://telegra.ph/file/b69c591d9667d187249c0.jpg",
+    "keywords": [
+        "Telegra.ph",
+        "Uploader",
+        "Telegram Bot",
+        "SDBOTs"
+    ],
+    "website": "https://t.me/SDBOTs_inifinity",
+    "repository": "https://github.com/Sadew451/TelegraphUploader",
+    "success_url": "https://telegram.dog/SDBOTsz",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from @SDMyTgOrgBot",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your API ID from @SDMyTgOrgBot",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
