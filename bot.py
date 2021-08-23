@@ -89,7 +89,7 @@ async def home(client, message):
         InlineKeyboardButton('📋 Source Code 📋', url='https://github.com/Sadew451/TelegraphUploader')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Tgraph.send_message(
+  await SDBots.send_message(
         chat_id=message.chat.id,
         text="""<b>Hey there,
         
@@ -113,7 +113,7 @@ async def help(client, message):
         InlineKeyboardButton('⚡️ Our Channel 📣', url='http://telegram.me/SDBOTs_Inifinity')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await Tgraph.send_message(
+  await SDBots.send_message(
         chat_id=message.chat.id,
         text="""There Is Nothung To KnowMore,
         
