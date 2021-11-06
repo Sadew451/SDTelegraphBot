@@ -1,4 +1,4 @@
-#    This file is part of the ChannelAutoForwarder distribution (https://github.com/Sadew451/TelegraphUploader).
+#    This file is part of the ChannelAutoForwarder distribution (https://github.com/Sadew451/SDTelegraphBot).
 #    Copyright (c) 2021 Sadew451
 #    
 #    This program is free software: you can redistribute it and/or modify  
@@ -10,7 +10,7 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
 #    General Public License for more details.
 # 
-#    License can be found in < https://github.com/Sadew451/TelegraphUploader/blob/main/License> 
+#    License can be found in < https://github.com/Sadew451/SDTelegraphBot/blob/main/License> 
 
 import os
 from telegraph import upload_file
@@ -26,7 +26,7 @@ SDBots = Client(
    "Telegra.ph Uploader",
    api_id=Config.APP_ID,
    api_hash=Config.API_HASH,
-   bot_token=Config.TG_BOT_TOKEN,
+   bot_token=Config.BOT_TOKEN,
 )
 
 @SDBots.on_message(filters.photo)
