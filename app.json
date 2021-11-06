@@ -12,7 +12,7 @@
     "repository": "https://github.com/Sadew451/SDTelegraphBot",
     "success_url": "https://telegram.dog/SDBOTsz",
     "env": {
-        "TG_BOT_TOKEN": {
+        "BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
         },
