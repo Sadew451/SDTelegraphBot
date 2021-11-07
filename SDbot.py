@@ -81,7 +81,7 @@ async def home(client, message):
         
 Im a Telegraph Uploader I can Upload Photo.Video & Gif
         
-First Send me photo, video or gif to upload `Telegraph`
+First Send me photo, video or gif to upload Telegraph
 Powerd By @SDBotsz. 🔥""",
         reply_markup=reply_markup,
         parse_mode="html",
