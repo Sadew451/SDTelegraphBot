@@ -78,11 +78,11 @@ async def uploadvid(client, message):
 @SDBots.on_message(filters.command(["start"]))
 async def home(client, message):
   buttons = [[
-        InlineKeyboardButton('Help', callback_data='help'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Help ❓', callback_data='help'),
+        InlineKeyboardButton('Close 🔐', callback_data='close')
     ],
     [
-        InlineKeyboardButton('Channel 📣', url='http://telegram.me/SDBOTs_Inifinity'),
+        InlineKeyboardButton('Channel 🙋‍♀️', url='http://telegram.me/SDBOTs_Inifinity'),
         InlineKeyboardButton('Source Code 💾', url='https://github.com/Sadew451/SDTelegraphBot')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
@@ -106,7 +106,7 @@ async def help(client, message):
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ],
     [
-        InlineKeyboardButton('Channel 📣', url='http://telegram.me/SDBOTs_Inifinity')
+        InlineKeyboardButton('Channel 🙋‍♀️', url='http://telegram.me/SDBOTs_Inifinity')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await SDBots.send_message(
