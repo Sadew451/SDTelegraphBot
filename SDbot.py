@@ -1,16 +1,5 @@
 #    This file is part of the ChannelAutoForwarder distribution (https://github.com/Sadew451/SDTelegraphBot).
 #    Copyright (c) 2021 Sadew451
-#    
-#    This program is free software: you can redistribute it and/or modify  
-#    it under the terms of the GNU General Public License as published by  
-#    the Free Software Foundation, version 3.
-# 
-#    This program is distributed in the hope that it will be useful, but 
-#    WITHOUT ANY WARRANTY; without even the implied warranty of 
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
-#    General Public License for more details.
-# 
-#    License can be found in < https://github.com/Sadew451/SDTelegraphBot/blob/main/License> 
 
 import os
 from telegraph import upload_file
@@ -87,7 +76,7 @@ async def home(client, message):
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await SDBots.send_sticker_id(sticker_id = "CAACAgUAAxkBAAEBN9FhhMQq99NL0eY70r47LmPghi9fsQAC2QUAAss5KFT5r0lsTegDZiIE")
-        chat_id=message.chat.id,
+        chat_id=message.chat_id,
         text="""👋 Hey there,
         
 Im a Telegraph Uploader I can Upload Photo.Video & Gif
