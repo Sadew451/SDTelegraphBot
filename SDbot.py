@@ -91,7 +91,7 @@ async def home(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await SDBots.send_message(
         chat_id=message.chat.id,
-        text="""👋 Hey there **{message.from_user.first_name }** ,
+        text="""👋 Hey there **{message.from_user.first_name}** ,
         
 Im a Telegraph Uploader I can Upload Photo.Video & Gif
         
