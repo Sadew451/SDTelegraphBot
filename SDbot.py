@@ -87,7 +87,7 @@ First Send me photo, video or gif to upload Telegraph
 Powerd By @SDBotsz. 🔥""",
         reply_markup=reply_markup,
         parse_mode="html",
-        reply_to_sticker=message.sticker
+        reply_to_message=message.message
     )
 
 @SDBots.on_message(filters.command(["help"]))
