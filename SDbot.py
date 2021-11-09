@@ -78,7 +78,7 @@ async def home(client, message):
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await SDBots.send_sticker(STICKER)
-        chat_id=message.chat.id,
+        chat_id=message.chat_id,
         text="""👋 Hey there,
         
 Im a Telegraph Uploader I can Upload Photo.Video & Gif
