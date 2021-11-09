@@ -77,8 +77,8 @@ async def home(client, message):
         InlineKeyboardButton('Source Code 💾', url='https://github.com/Sadew451/SDTelegraphBot')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await SDBots.send_sticker(STICKER)
-        chat_id=message.chat_id,
+  await SDBots.reply_sticker(STICKER)
+        chat_id=message.chat.id,
         text="""👋 Hey there,
         
 Im a Telegraph Uploader I can Upload Photo.Video & Gif
