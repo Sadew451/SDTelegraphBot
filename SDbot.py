@@ -8,7 +8,7 @@ from pyrogram import filters, Client
 from sample_config import Config
 from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,InlineKeyboardMarkup, InlineKeyboardButton,CallbackQuery, InlineQuery)
 
-STICKER = "CAACAgUAAxkBAAEBT4Bhih3lL3FSMYx1pFvEwwwplJfqhQACJgQAAgjSKFSQdidotfevrCIE"
+STICKER_ID = "CAACAgUAAxkBAAEBT4Bhih3lL3FSMYx1pFvEwwwplJfqhQACJgQAAgjSKFSQdidotfevrCIE"
 
 SDBots = Client(
    "Telegra.ph Uploader",
