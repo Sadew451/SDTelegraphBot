@@ -6,9 +6,12 @@ SDTelegraph Bot Visi on Telegram [@SDTelegraphbot](https://telegram.dog/SDTelegr
 
 A Telegram Bot Written In Python To Upload Medias To telegra.ph
 
-### Deploy on Heroku
-
+<details>
+  <summary> Deploy on Heroku </summary>
+  <br/>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sadew451/SDTelegraphBot)
+</details>
+
 
 
 #### For Report Bug and support, contact [SDBOTs](https://telegram.dog/SDBOTz)
