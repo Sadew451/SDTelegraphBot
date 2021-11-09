@@ -77,7 +77,7 @@ async def home(client, message):
         InlineKeyboardButton('Source Code 💾', url='https://github.com/Sadew451/SDTelegraphBot')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await SDBots.reply_sticker(STICKER)
+  await SDBots.send_message
         chat_id=message.chat.id,
         text="""👋 Hey there,
         
