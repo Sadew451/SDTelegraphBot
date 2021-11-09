@@ -8,8 +8,6 @@ from pyrogram import filters, Client
 from sample_config import Config
 from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,InlineKeyboardMarkup, InlineKeyboardButton,CallbackQuery, InlineQuery)
 
-STICKER_ID = "CAACAgUAAxkBAAEBT4Bhih3lL3FSMYx1pFvEwwwplJfqhQACJgQAAgjSKFSQdidotfevrCIE"
-
 SDBots = Client(
    "Telegra.ph Uploader",
    api_id=Config.APP_ID,
@@ -66,6 +64,8 @@ async def uploadvid(client, message):
   else:
     await message.reply_text("Size Should Be Less Than 5 MB")
 
+STICKER = "CAACAgUAAxkBAAEBT4Bhih3lL3FSMYx1pFvEwwwplJfqhQACJgQAAgjSKFSQdidotfevrCIE"
+      
 @SDBots.on_message(filters.command(["start"]))
 async def home(client, message):
   buttons = [[
